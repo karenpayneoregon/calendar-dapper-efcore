@@ -1,6 +1,6 @@
 # About
 
-## EF Core 8 and Dapper example: calendar examples
+## EF Core 8 and Dapper: calendar examples
 
 A repository for working example using Dapper and EF Core for working with a calendar database.
 
