@@ -13,7 +13,7 @@ internal partial class Program
     public static void Init()
     {
         AnsiConsole.MarkupLine("");
-        Console.Title = "Code sample";
+        Console.Title = "Code sample Dapper";
         WindowUtility.SetConsoleWindowPosition(WindowUtility.AnchorWindow.Center);
     }
 }

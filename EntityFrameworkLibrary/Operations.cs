@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkLibrary;
 
-public class Operations
+public partial class Operations
 {
     public static async Task<List<Calendar>> GetCalendar(int year, int month, bool businessDay, string dow)
     {
@@ -41,30 +41,10 @@ public class Operations
     {
         await using var context = new Context();
         var list = await context.Database.SqlQuery<HolidaysForMonthYear>(
-            $"""
-             SELECT CalendarDate,
-                    CalendarYear,
-                    CalendarDay,
-                    DayOfWeekName,
-                    CASE
-                        WHEN Weekend = 1 THEN
-                            'Yes'
-                        ELSE
-                            'No'
-                    END AS Weekend,
-                    CASE
-                        WHEN Weekday = 1 THEN
-                            'Yes'
-                        ELSE
-                            'No'
-                    END AS Weekday,
-                    CalendarDateDescription AS Description
-             FROM dbo.Calendar
-             WHERE CalendarMonth = MONTH(GETDATE())
-                   AND CalendarYear = CAST(YEAR(GETDATE()) AS INT)
-                   AND Holiday = 1;
-             """).ToListAsync();
+            HolidaysForMonthYearStatement()).ToListAsync();
 
         return list;
     }
+
+
 }
