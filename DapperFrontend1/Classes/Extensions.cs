@@ -1,0 +1,9 @@
+﻿using System.Diagnostics;
+
+namespace DapperFrontend1.Classes;
+
+public static class Extensions
+{
+    [DebuggerStepThrough]
+    public static string ToYesNo(this bool value) => value ? "Yes" : "No";
+}
