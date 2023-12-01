@@ -1,10 +1,4 @@
-﻿using EntityFrameworkLibrary.Data;
-using EntityFrameworkLibrary;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EntityFrameworkLibrary;
 using EntityFrontend1.Classes;
 using static UtilityLibrary.SpectreConsoleHelpers;
 
