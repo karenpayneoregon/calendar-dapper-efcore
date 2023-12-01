@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		Misc.sql = Misc.sql
 		EntityFrameworkLibrary\populate.sql = EntityFrameworkLibrary\populate.sql
-		readms.md = readms.md
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class projects", "{588A65E8-6658-46B4-90C2-DF49BDB546F6}"
