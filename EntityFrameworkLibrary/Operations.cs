@@ -1,6 +1,5 @@
 ﻿using EntityFrameworkLibrary.Classes;
 using EntityFrameworkLibrary.Data;
-using EntityFrameworkLibrary.Interfaces;
 using EntityFrameworkLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,10 +39,9 @@ public partial class Operations
     public static async Task<List<HolidaysForMonthYear>> HolidaysForMonthYear()
     {
         await using var context = new Context();
-        var list = await context.Database.SqlQuery<HolidaysForMonthYear>(
+        return await context.Database.SqlQuery<HolidaysForMonthYear>(
             HolidaysForMonthYearStatement()).ToListAsync();
 
-        return list;
     }
 
 

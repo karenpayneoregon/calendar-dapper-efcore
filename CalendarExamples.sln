@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilityLibrary", "UtilityLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperLibrary", "DapperLibrary\DapperLibrary.csproj", "{EAB0BEC4-7327-41C1-A7A4-BA775922CFF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperFrontend1", "DapperFrontend1\DapperFrontend1.csproj", "{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperFrontend1", "DapperFrontend1\DapperFrontend1.csproj", "{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarStoredProcedure", "CalendarStoredProcedure\CalendarStoredProcedure.csproj", "{F57A0278-2078-4A03-B395-BF52EE0FF23A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57A0278-2078-4A03-B395-BF52EE0FF23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57A0278-2078-4A03-B395-BF52EE0FF23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57A0278-2078-4A03-B395-BF52EE0FF23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57A0278-2078-4A03-B395-BF52EE0FF23A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{BA99E6A3-DEDB-43F2-866A-622742ADAC8E} = {588A65E8-6658-46B4-90C2-DF49BDB546F6}
 		{EAB0BEC4-7327-41C1-A7A4-BA775922CFF8} = {588A65E8-6658-46B4-90C2-DF49BDB546F6}
 		{1C608ADD-98E4-4FE9-9E7A-E44BCABB6D3C} = {7F8FF477-FC76-4F33-80DD-D220CBAEF771}
+		{F57A0278-2078-4A03-B395-BF52EE0FF23A} = {7F8FF477-FC76-4F33-80DD-D220CBAEF771}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075D53F5-7872-4102-8CBF-246FE3EEF351}
